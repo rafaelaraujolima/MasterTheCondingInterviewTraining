@@ -10,9 +10,10 @@ internal class Teste
 {
     static void Main(string[] args)
     {
-        int[] array = [1, 2, 3, 9];
+        int[] array = [1, 2, 3, 5];
         int sum = 8;
 
-        Console.WriteLine(HasPairWithSum.CheckIfHasPairWithSum(array, sum));
+        //Console.WriteLine(HasPairWithSum.CheckIfHasPairWithSum(array, sum));
+        Console.WriteLine(HasPairWithSum2.CheckIfHasPairWithSum(array, sum));
     }
 }
