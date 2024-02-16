@@ -11,38 +11,18 @@
 // const array2 = ['z', 'y', 'x']
 // should return true
 
-List<char> items1 = new List<char>();
-List<char> items2 = new List<char>();
+using MasterTheCodingInterviewTraining;
 
-string input = Console.ReadLine();
-
-for (int i = 0; i < input.Length; i++)
-{
-    items1.Add(input[i]);
-}
-
-input = Console.ReadLine();
-
-for (int i = 0; i < input.Length; i++)
-{
-    items2.Add(input[i]);
-} 
-
-if (items1.Count > 0 && items2.Count > 0)
-{
-    for (int i = 0;i < items1.Count; i++)
+internal class Teste { 
+    static void Main(string[] args)
     {
-        for (int j = 0;j < items2.Count; j++)
-        {
-            if (items1[i] == items2[j])
-            {
-                Console.WriteLine("true");
-                break;
-            }
-            else if (items1[i] != items2[j] && (i == (items1.Count-1) && j == (items2.Count-1)))
-            {
-                Console.WriteLine("false");
-            }
-        }
-    }    
+        Object[] array1 = ['a', 'b', 'c', 'x'];
+        Object[] array2 = ['z', 'w', 'v'];
+        
+        Console.WriteLine(ContaisCommonItems.HasCommonItems(array1, array2));
+    } 
 }
+
+//O(a*b)
+//We need to do a better solution
+
