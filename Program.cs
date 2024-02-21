@@ -9,9 +9,9 @@ internal class Teste
 {
     public static void Main(string[] args)
     {
-        int[] arr1 = [0, 3, 4, 31];
-        //int[] arr2 = [4, 6, 30];
-        int[] arr2 = null;
+        int[] arr1 = [0, 3, 4, 31, 101];
+        int[] arr2 = [4, 6, 30, 35, 43, 49, 87, 95, 113, 215];
+        //int[] arr2 = null;
 
         Console.WriteLine(string.Join(" ", MergeSortedArrays.MergeTheArrays(arr1, arr2)));
     }
