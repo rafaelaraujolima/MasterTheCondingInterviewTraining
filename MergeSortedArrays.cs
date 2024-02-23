@@ -43,6 +43,14 @@ namespace MasterTheCodingInterviewTraining
 
                 return mergedArray;
             }
+            else if (arr1 != null || arr2 == null)
+            {
+                return arr1;
+            }
+            else
+            {
+                return arr2;
+            }
             return [];
         }
     }
