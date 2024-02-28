@@ -15,7 +15,7 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine(SolutionFirstRecurringCharacter.FirstRecurringCharacter([2, 3, 4, 5]));
+        Console.WriteLine(SolutionFirstRecurringCharacter.FirstRecurringCharacter([2, 1, 3, 4, 3, 5, 1, 2, 4]));
     }
 }
 
